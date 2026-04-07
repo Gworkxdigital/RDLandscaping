@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryan's Landscaping Business Could Be Generating Leads Like This | RD Landscape & Design</title>
+<meta name="description" content="You just experienced your future website. Professional. High-converting. Built for Acton, MA. Let's make it yours for $97/month.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #1a3d2b;
+  --green-mid: #2d5a3f;
+  --green-light: #3d7a55;
+  --gold: #b8963e;
+  --gold-light: #d4af60;
+  --cream: #f7f3ec;
+  --cream-dark: #ede6d6;
+  --white: #ffffff;
+  --charcoal: #1c1c1c;
+  --text: #2c2c2c;
+  --text-light: #5a5a5a;
+  --border: #c8b98a;
+  --font-display: 'Lora', Georgia, serif;
+  --font-body: 'Lato', sans-serif;
+  --radius: 4px;
+  --shadow: 0 4px 20px rgba(26,61,43,0.15);
+  --shadow-lg: 0 12px 40px rgba(26,61,43,0.2);
+  --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--font-body); color: var(--text); background: var(--cream); line-height: 1.65; }
+
+@keyframes fadeUp { from { opacity:0; transform: translateY(32px); } to { opacity:1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes kenBurns1 { 0%,100%{ transform:scale(1) translate(0,0); } 50%{ transform:scale(1.08) translate(-2%,1%); } }
+@keyframes kenBurns2 { 0%,100%{ transform:scale(1.06) translate(0,0); } 50%{ transform:scale(1) translate(2%,-1%); } }
+@keyframes kenBurns3 { 0%,100%{ transform:scale(1) translate(1%,0); } 50%{ transform:scale(1.07) translate(-1%,2%); } }
+@keyframes pulse { 0%,100%{ box-shadow:0 0 0 0 rgba(184,150,62,0.4); } 70%{ box-shadow:0 0 0 12px rgba(184,150,62,0); } }
+@keyframes goldLine { from { width:0; } to { width:60px; } }
+
+.reveal { opacity:0; transform:translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* TOP BAR */
+.top-bar {
+  background: var(--green); color: var(--cream);
+  padding: 8px 24px; display: flex; align-items: center; justify-content: space-between;
+  font-size: 0.82rem; letter-spacing: 0.03em;
+  position: sticky; top: 0; z-index: 1000;
+}
+.top-bar-left { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+.top-bar-right { display:flex; align-items:center; gap:10px; }
+.top-bar a { color: var(--cream); text-decoration:none; }
+.top-bar a:hover { color: var(--gold-light); }
+.top-bar .sep { opacity:0.4; }
+.btn-call-sm { background: var(--gold); color: var(--white); padding: 5px 14px; border-radius: 3px; font-weight:700; font-size:0.8rem; text-decoration:none; transition: background var(--transition); white-space:nowrap; }
+.btn-call-sm:hover { background: var(--gold-light); color:var(--white) !important; }
+.btn-sms-sm { background: transparent; color: var(--gold-light); padding: 5px 14px; border-radius: 3px; font-weight:700; font-size:0.8rem; border: 1px solid var(--gold-light); text-decoration:none; transition: all var(--transition); white-space:nowrap; }
+.btn-sms-sm:hover { background: var(--gold-light); color: var(--green) !important; }
+
+/* NAV */
+.nav-wrap { position: sticky; top:37px; z-index: 999; }
+nav {
+  background: var(--cream); border-bottom: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 32px; height: 68px; transition: box-shadow var(--transition);
+}
+nav.scrolled { box-shadow: 0 4px 20px rgba(26,61,43,0.18); }
+.nav-logo-text { font-family: var(--font-display); font-size:1.2rem; font-weight:700; color: var(--green); text-decoration:none; line-height:1.2; display:flex; align-items:center; gap:10px; }
+.nav-logo-text img { height:52px; width:auto; display:block; }
+.nav-links { display:flex; align-items:center; gap:4px; list-style:none; }
+.nav-links > li > a, .nav-links > li > button { font-family: var(--font-body); font-size:0.88rem; font-weight:700; color: var(--green); text-decoration:none; letter-spacing:0.06em; text-transform:uppercase; padding: 8px 14px; border:none; background:none; cursor:pointer; transition: color var(--transition); position:relative; }
+.nav-links > li > a:hover, .nav-links > li > button:hover { color: var(--gold); }
+.nav-cta { background: var(--green); color: var(--white) !important; padding: 9px 20px !important; border-radius: 3px; font-weight:900 !important; transition: background var(--transition) !important; }
+.nav-cta:hover { background: var(--gold) !important; }
+.dropdown { position:relative; }
+.dropdown-menu { position:absolute; top:100%; left:0; min-width:200px; background: var(--white); border:1px solid var(--border); border-top: 3px solid var(--gold); box-shadow: 0 8px 30px rgba(26,61,43,0.15); display:none; z-index:1000; list-style:none; }
+.dropdown:hover .dropdown-menu { display:block; }
+.dropdown-menu li a { display:block; padding: 11px 18px; font-size:0.85rem; font-weight:600; color: var(--green); text-decoration:none; letter-spacing:0.04em; border-bottom: 1px solid var(--cream-dark); transition: background var(--transition), color var(--transition); }
+.dropdown-menu li a:hover { background: var(--cream); color: var(--gold); }
+.dropdown-menu li:last-child a { border-bottom:none; }
+.drop-arrow { font-size:0.7rem; margin-left:4px; }
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px; }
+.hamburger span { display:block; width:26px; height:2px; background:var(--green); transition: transform var(--transition), opacity var(--transition); }
+.hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity:0; }
+.hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+.mobile-nav { display:none; background:var(--white); border-bottom: 3px solid var(--gold); padding: 16px 24px 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+.mobile-nav ul { list-style:none; }
+.mobile-nav li a, .mobile-nav li button { display:block; padding: 12px 0; font-weight:700; font-size:0.9rem; color:var(--green); text-decoration:none; border-bottom: 1px solid var(--cream-dark); background:none; border-left:none; border-right:none; border-top:none; cursor:pointer; width:100%; text-align:left; letter-spacing:0.05em; text-transform:uppercase; }
+.mobile-ctas { display:flex; gap:10px; margin-top:16px; }
+.mobile-ctas a { flex:1; text-align:center; padding:12px; border-radius:3px; font-weight:700; text-decoration:none; font-size:0.88rem; }
+.mobile-call { background:var(--green); color:var(--white); }
+.mobile-sms { background:transparent; color:var(--green); border:2px solid var(--green); }
+
+/* HERO */
+.hero { position:relative; height:88vh; min-height:540px; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+.hero-slide { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; transition: opacity 1.2s ease; }
+.hero-slide:nth-child(1) { background-image:url('hero-1.jpeg'); animation: kenBurns1 20s ease-in-out infinite; }
+.hero-slide:nth-child(2) { background-image:url('hero-2.jpeg'); animation: kenBurns2 20s ease-in-out infinite; }
+.hero-slide:nth-child(3) { background-image:url('hero-3.jpeg'); animation: kenBurns3 20s ease-in-out infinite; }
+.hero-slide.active { opacity:1; }
+.hero-overlay { position:absolute; inset:0; background: linear-gradient(135deg, rgba(26,61,43,0.72) 0%, rgba(29,67,45,0.62) 60%, rgba(184,150,62,0.25) 100%); }
+.hero-content { position:relative; z-index:2; text-align:center; max-width:860px; padding:0 24px; color:var(--white); }
+.hero-badge { display:inline-block; background:var(--gold); color:var(--white); font-size:0.75rem; font-weight:900; letter-spacing:0.14em; text-transform:uppercase; padding:5px 18px; margin-bottom:22px; animation: fadeIn 0.6s ease both; }
+.hero h1 { font-family: var(--font-display); font-size:clamp(1.9rem,4.5vw,3.4rem); font-weight:700; line-height:1.2; margin-bottom:18px; animation: fadeUp 0.8s ease 0.2s both; }
+.hero h1 em { color:var(--gold-light); font-style:italic; }
+.hero p { font-size:clamp(1rem,2vw,1.18rem); font-weight:300; max-width:620px; margin:0 auto 28px; opacity:0.92; line-height:1.75; animation: fadeUp 0.8s ease 0.4s both; }
+.hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; animation: fadeUp 0.8s ease 0.6s both; }
+.btn-primary { background:var(--gold); color:var(--white); padding:15px 32px; font-weight:900; font-size:0.95rem; letter-spacing:0.07em; text-transform:uppercase; text-decoration:none; border-radius:3px; display:inline-block; transition: background var(--transition), transform var(--transition); animation: pulse 2.5s ease-in-out 1.5s infinite; }
+.btn-primary:hover { background:var(--gold-light); transform:translateY(-2px); }
+.btn-secondary { background:transparent; color:var(--white); padding:14px 30px; font-weight:700; font-size:0.95rem; letter-spacing:0.07em; text-transform:uppercase; text-decoration:none; border-radius:3px; display:inline-block; border:2px solid rgba(255,255,255,0.75); transition: all var(--transition); }
+.btn-secondary:hover { background:rgba(255,255,255,0.15); }
+
+/* PITCH BODY */
+.pitch-section { padding:80px 24px; background:var(--white); }
+.pitch-inner { max-width:800px; margin:0 auto; }
+.section-label { font-size:0.75rem; font-weight:900; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; display:block; }
+.section-title { font-family: var(--font-display); font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:700; color:var(--green); line-height:1.25; margin-bottom:12px; }
+.gold-rule { width:60px; height:3px; background:var(--gold); margin:16px 0 28px; }
+.pitch-body { display:flex; flex-direction:column; gap:22px; }
+.pitch-para { font-size:1.02rem; color:var(--text); line-height:1.85; }
+.pitch-para strong { color:var(--green); }
+.pitch-highlight { background:var(--cream); border-left:4px solid var(--gold); padding:20px 24px; border-radius:0 var(--radius) var(--radius) 0; margin:10px 0; }
+.pitch-highlight p { font-family:var(--font-display); font-size:1.08rem; color:var(--green); font-style:italic; line-height:1.7; }
+.offer-box { background:var(--green); padding:32px; border-radius:var(--radius); margin-top:24px; text-align:center; }
+.offer-box h3 { font-family:var(--font-display); color:var(--gold-light); font-size:1.6rem; margin-bottom:8px; }
+.offer-box p { color:rgba(247,243,236,0.85); font-size:0.95rem; line-height:1.7; max-width:520px; margin:0 auto 8px; }
+.offer-list { list-style:none; display:flex; flex-wrap:wrap; gap:10px 20px; justify-content:center; margin:16px 0 24px; }
+.offer-list li { color:var(--cream); font-size:0.88rem; display:flex; align-items:center; gap:6px; }
+.offer-list li::before { content:'✓'; color:var(--gold); font-weight:900; }
+.offer-price { font-family:var(--font-display); color:var(--gold-light); font-size:2.4rem; font-weight:700; margin-bottom:4px; }
+.offer-price span { font-size:1rem; opacity:0.7; }
+.btn-messenger { display:inline-flex; align-items:center; gap:10px; background:#0084ff; color:#fff; padding:16px 36px; border-radius:3px; font-weight:900; font-size:1rem; letter-spacing:0.06em; text-transform:uppercase; text-decoration:none; transition:background var(--transition), transform var(--transition); margin-top:8px; }
+.btn-messenger:hover { background:#006fd6; transform:translateY(-2px); }
+.secondary-cta { color:rgba(247,243,236,0.65); font-size:0.85rem; margin-top:14px; }
+
+/* FORM */
+.form-section { background:var(--cream-dark); padding:60px 24px; border-top:3px solid var(--border); }
+.form-card { max-width:640px; margin:0 auto; background:var(--white); border:1px solid var(--border); padding:40px; border-top: 4px solid var(--gold); box-shadow: var(--shadow); }
+.form-card h2 { font-family:var(--font-display); font-size:1.7rem; color:var(--green); margin-bottom:6px; }
+.form-card p { color:var(--text-light); margin-bottom:24px; font-size:0.92rem; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.form-group { display:flex; flex-direction:column; gap:6px; margin-bottom:14px; }
+.form-group label { font-size:0.82rem; font-weight:700; color:var(--green); letter-spacing:0.05em; text-transform:uppercase; }
+.form-group input, .form-group select, .form-group textarea { border: 1px solid var(--border); border-radius: var(--radius); padding: 11px 14px; font-size:0.92rem; font-family:var(--font-body); color:var(--text); background:var(--cream); transition: border-color var(--transition), box-shadow var(--transition); outline:none; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(26,61,43,0.1); }
+.form-group textarea { resize:vertical; min-height:90px; }
+.btn-submit { width:100%; padding:14px; background:var(--green); color:var(--white); border:none; border-radius:var(--radius); font-size:1rem; font-weight:900; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer; transition: background var(--transition), transform var(--transition); margin-top:6px; }
+.btn-submit:hover { background:var(--gold); transform:translateY(-2px); }
+.form-success { display:none; text-align:center; padding:20px; color:var(--green); font-weight:700; }
+
+/* FOOTER */
+footer { background:var(--charcoal); padding:60px 24px 30px; }
+.footer-inner { max-width:1140px; margin:0 auto; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1.5fr; gap:40px; margin-bottom:40px; }
+.footer-brand .footer-logo { font-family:var(--font-display); font-size:1.3rem; color:var(--gold); font-weight:700; margin-bottom:12px; }
+.footer-brand p { color:rgba(255,255,255,0.55); font-size:0.85rem; line-height:1.7; }
+.footer-col h4 { color:var(--white); font-size:0.8rem; font-weight:900; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid rgba(184,150,62,0.4); }
+.footer-col ul { list-style:none; }
+.footer-col ul li { margin-bottom:8px; }
+.footer-col ul li a { color:rgba(255,255,255,0.55); text-decoration:none; font-size:0.85rem; transition:color var(--transition); }
+.footer-col ul li a:hover { color:var(--gold-light); }
+.footer-contact-item { display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; }
+.footer-contact-item span:first-child { color:var(--gold); flex-shrink:0; margin-top:2px; }
+.footer-contact-item a, .footer-contact-item span:last-child { color:rgba(255,255,255,0.65); font-size:0.85rem; text-decoration:none; line-height:1.5; }
+.footer-contact-item a:hover { color:var(--gold-light); }
+.footer-bottom { border-top:1px solid rgba(255,255,255,0.1); padding-top:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+.footer-bottom p { color:rgba(255,255,255,0.35); font-size:0.78rem; }
+
+/* MESSENGER FAB */
+.messenger-fab { position:fixed; bottom:24px; right:24px; z-index:9999; width:56px; height:56px; border-radius:50%; background:#0084ff; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(0,132,255,0.45); opacity:0; pointer-events:none; transition: opacity 0.4s ease; }
+.messenger-fab.show { opacity:1; pointer-events:all; }
+.messenger-fab:hover { transform:scale(1.1); }
+
+@media (max-width:768px) {
+  .top-bar { font-size:0.75rem; padding:6px 14px; }
+  .nav-links { display:none; }
+  .hamburger { display:flex; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
+  .form-row { grid-template-columns:1fr; }
+  .offer-list { flex-direction:column; align-items:center; }
+}
+@media (max-width:480px) {
+  .footer-grid { grid-template-columns:1fr; }
+  nav { padding:0 16px; }
+  .nav-logo-text img { height:42px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <span>📍 Acton, MA <span class="sep">|</span> Serving Metro-West Boston</span>
+    <span><a href="tel:9782894222">☎ (978) 289-4222</a></span>
+    <span>Mon–Sat 8AM–5PM</span>
+  </div>
+  <div class="top-bar-right">
+    <a href="tel:9782894222" class="btn-call-sm">Call Now</a>
+    <a href="sms:+19782894222" class="btn-sms-sm">Text Us</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <nav id="mainNav">
+    <a href="index.html" class="nav-logo-text">
+      <img src="logo.svg" alt="RD Landscape & Design logo">
+    </a>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <button>Services <span class="drop-arrow">▾</span></button>
+        <ul class="dropdown-menu">
+          <li><a href="redirect.html">Grounds Maintenance</a></li>
+          <li><a href="redirect.html">Landscape Installation</a></li>
+          <li><a href="redirect.html">Lawn Care & Aeration</a></li>
+          <li><a href="redirect.html">Mulching & Edging</a></li>
+          <li><a href="redirect.html">Snow & Ice Management</a></li>
+          <li><a href="redirect.html">Spring/Fall Clean-Ups</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <button>Areas <span class="drop-arrow">▾</span></button>
+        <ul class="dropdown-menu">
+          <li><a href="redirect.html">Acton, MA</a></li>
+          <li><a href="redirect.html">Concord, MA</a></li>
+          <li><a href="redirect.html">Lexington, MA</a></li>
+          <li><a href="redirect.html">Cambridge, MA</a></li>
+          <li><a href="redirect.html">Metro-West Boston</a></li>
+        </ul>
+      </li>
+      <li><a href="redirect.html">Reviews</a></li>
+      <li><a href="redirect.html">About</a></li>
+      <li><a href="redirect.html">Contact</a></li>
+      <li><a href="tel:9782894222" class="nav-cta">☎ Call Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="redirect.html">Services</a></li>
+      <li><a href="redirect.html">Areas</a></li>
+      <li><a href="redirect.html">Reviews</a></li>
+      <li><a href="redirect.html">About</a></li>
+      <li><a href="redirect.html">Contact</a></li>
+    </ul>
+    <div class="mobile-ctas">
+      <a href="tel:9782894222" class="mobile-call">☎ Call Now</a>
+      <a href="sms:+19782894222" class="mobile-sms">✉ Text Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-slide active" id="slide1"></div>
+  <div class="hero-slide" id="slide2"></div>
+  <div class="hero-slide" id="slide3"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Built Specifically For Ryan German · RD Landscape & Design</span>
+    <h1>Ryan's Landscaping Business Could Be<br><em>Generating Leads Like This</em> — Every Single Day.</h1>
+    <p>You just experienced your own future website. High-converting. Professional. Built for Acton, MA. Ready in a week. Let's make it yours.</p>
+    <div class="hero-btns">
+      <a href="https://www.facebook.com/YOUR_AGENCY_PAGE" target="_blank" rel="noopener" class="btn-primary">Let's Talk — Message Me on Facebook</a>
+      <a href="sms:+19782894222" class="btn-secondary">✉ Text Ryan Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- PITCH SECTION -->
+<section class="pitch-section">
+  <div class="pitch-inner">
+    <span class="section-label">A Note for Ryan</span>
+    <h2 class="section-title reveal">Hey Ryan — You Just Saw What Your Customers Would Experience.</h2>
+    <div class="gold-rule reveal"></div>
+
+    <div class="pitch-body">
+      <p class="pitch-para reveal">
+        If you made it this far, you just experienced exactly what your future customers would feel when they land on your website. <strong>A real, professional site that builds trust the moment someone searches for landscapers in Acton.</strong> It captures leads 24/7, looks great on every phone, and does the selling for you while you're out on the job.
+      </p>
+
+      <div class="pitch-highlight reveal">
+        <p>"We work hard to provide service excellence and professionalism on every job. Customer success is our #1 priority." — That's your voice. This site says it louder than any business card ever could.</p>
+      </div>
+
+      <p class="pitch-para reveal">
+        You've built a genuinely great business over 10+ years. 5-star ratings across Google, HomeAdvisor, and Yelp. Clients who recommend you to their friends. A certified, educated team that shows up and does the work right. <strong>The only thing missing is a website that matches the quality of what you actually deliver.</strong>
+      </p>
+
+      <p class="pitch-para reveal">
+        Right now, new homeowners and commercial property managers in Acton, Concord, and Lexington are searching for a landscaper online — and not finding you. This site changes that. It's fully built, hosted free, and includes lead capture forms, click-to-call buttons, Google Maps, your reviews, and your full service list. <strong>Everything is ready. We just need to make it yours.</strong>
+      </p>
+
+      <div class="offer-box reveal">
+        <h3>Here's What You Get</h3>
+        <p>A complete, professional website built for RD Landscape & Design — live within a week, no tech knowledge required.</p>
+        <ul class="offer-list">
+          <li>Fully built, mobile-first landing page</li>
+          <li>Free hosting via GitHub Pages</li>
+          <li>2 lead capture forms (Web3Forms)</li>
+          <li>Click-to-call + Text button on every page</li>
+          <li>Your Google reviews showcased</li>
+          <li>Service area map embed</li>
+          <li>1 revision/month included</li>
+          <li>No lock-in — cancel any time</li>
+        </ul>
+        <div class="offer-price">$97 <span>/ month</span></div>
+        <p style="font-size:0.82rem; margin-bottom:20px;">No setup fee. No contract. You pay for your domain (~$12/year from Namecheap — you own it). Cancel any time.</p>
+        <a href="https://www.facebook.com/YOUR_AGENCY_PAGE" target="_blank" rel="noopener" class="btn-messenger">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.2 2 11.4c0 2.85 1.27 5.4 3.3 7.14v3.46l3.35-1.84C9.68 20.38 10.82 20.6 12 20.6c5.52 0 10-4.2 10-9.2S17.52 2 12 2zm1.04 12.39l-2.55-2.72-4.98 2.72 5.48-5.82 2.61 2.72 4.92-2.72-5.48 5.82z"/></svg>
+          Let's Talk — Message Me on Facebook
+        </a>
+        <p class="secondary-cta">Or fill out the form below and I'll reach out within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<div class="form-section" id="contact">
+  <div class="form-card reveal">
+    <h2>Get In Touch — I'll Reach Out Within 24 Hours</h2>
+    <p>Fill out the form below and we can talk through any questions you have. No obligation, no pressure.</p>
+    <form id="form-redirect" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="3f9dd96b-2117-4746-9046-4703c48f2b26">
+      <input type="hidden" name="subject" value="REDIRECT PAGE LEAD – RD Landscape & Design POC">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="rname">Your Name</label>
+          <input type="text" id="rname" name="name" placeholder="Ryan German" required>
+        </div>
+        <div class="form-group">
+          <label for="rphone">Phone Number</label>
+          <input type="tel" id="rphone" name="phone" placeholder="(978) 289-4222">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="remail">Email Address</label>
+        <input type="email" id="remail" name="email" placeholder="info@rd-landscape.com" required>
+      </div>
+      <div class="form-group">
+        <label for="rmsg">Any Questions or Comments?</label>
+        <textarea id="rmsg" name="message" placeholder="I'm interested in the $97/month website…"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Message — Let's Talk →</button>
+      <div class="form-success" id="redirect-success">✅ Message received! I'll be in touch within 24 hours.</div>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">RD Landscape & Design</div>
+        <p>Locally owned and operated landscaping, grounds maintenance, and snow management based in Acton, MA. Serving Metro-West Boston since 2016. College-educated team. Fully insured. Certified professionals.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="redirect.html">Grounds Maintenance</a></li>
+          <li><a href="redirect.html">Landscape Installation</a></li>
+          <li><a href="redirect.html">Lawn Care & Aeration</a></li>
+          <li><a href="redirect.html">Snow & Ice Management</a></li>
+          <li><a href="redirect.html">Spring/Fall Clean-Ups</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="redirect.html">Acton, MA</a></li>
+          <li><a href="redirect.html">Concord, MA</a></li>
+          <li><a href="redirect.html">Lexington, MA</a></li>
+          <li><a href="redirect.html">Cambridge, MA</a></li>
+          <li><a href="redirect.html">Metro-West Boston</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <span>📍</span><span>148R Willow Street<br>Acton, MA 01720</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>☎</span><a href="tel:9782894222">(978) 289-4222</a>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉</span><a href="mailto:info@rd-landscape.com">info@rd-landscape.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <span>🕐</span><span>Mon–Sat: 8AM–5PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 RD Landscape & Design, LLC. All rights reserved. | Acton, MA 01720</p>
+      <p><a href="redirect.html" style="color:rgba(255,255,255,0.35); text-decoration:none;">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- MESSENGER FAB -->
+<a href="https://m.me/rdlandscapedesign" class="messenger-fab" id="messengerFab" target="_blank" rel="noopener" aria-label="Message RD Landscape on Messenger">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.2 2 11.4c0 2.85 1.27 5.4 3.3 7.14v3.46l3.35-1.84C9.68 20.38 10.82 20.6 12 20.6c5.52 0 10-4.2 10-9.2S17.52 2 12 2zm1.04 12.39l-2.55-2.72-4.98 2.72 5.48-5.82 2.61 2.72 4.92-2.72-5.48 5.82z"/></svg>
+</a>
+
+<script>
+// Hamburger
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileNav.style.display === 'block';
+  mobileNav.style.display = isOpen ? 'none' : 'block';
+  hamburger.classList.toggle('open', !isOpen);
+});
+document.addEventListener('click', (e) => {
+  if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+    mobileNav.style.display = 'none';
+    hamburger.classList.remove('open');
+  }
+});
+
+// Sticky nav
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Hero Ken Burns cycle
+const slides = document.querySelectorAll('.hero-slide');
+let current = 0;
+setInterval(() => {
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}, 5000);
+
+// IntersectionObserver reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Messenger FAB delay
+setTimeout(() => {
+  document.getElementById('messengerFab').classList.add('show');
+}, 4000);
+
+// Form
+const form = document.getElementById('form-redirect');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = form.querySelector('.btn-submit');
+  btn.textContent = 'Sending…'; btn.disabled = true;
+  const data = new FormData(form);
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', { method:'POST', body: data });
+    const json = await res.json();
+    if (json.success) {
+      form.style.display = 'none';
+      document.getElementById('redirect-success').style.display = 'block';
+    } else { btn.textContent = 'Send Message — Let\'s Talk →'; btn.disabled = false; }
+  } catch { btn.textContent = 'Send Message — Let\'s Talk →'; btn.disabled = false; }
+});
+</script>
+</body>
+</html>
